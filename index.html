@@ -9,7 +9,8 @@
 <body>
 
 <h1>JS Drum Kit</h1>
-<h2>Press these keys on keyboard to play sounds</h2>
+<p> Click anywhere on the page, then press A–L on your keyboard</p>
+
   <div class="keys">
     <div data-key="65" class="key">
       <kbd>A</kbd>
@@ -77,7 +78,11 @@
 
   const keys = Array.from(document.querySelectorAll('.key'));
   keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-  window.addEventListener('keydown', playSound);
+  //window.addEventListener('keydown', playSound);
+  window.addEventListener('keydown', (e) => {
+  playSound(e);
+});
+
 
 </script>
 
