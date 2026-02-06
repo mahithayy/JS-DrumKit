@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../event!"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "js clock 2-30"
+	}
+}
